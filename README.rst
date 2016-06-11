@@ -2,9 +2,17 @@
 CNX CompleteZip Library
 =======================
 
+.. image:: https://travis-ci.org/Connexions/cnx-completezip.svg
+   :target: https://travis-ci.org/Connexions/cnx-completezip
+
+.. image:: https://coveralls.io/repos/Connexions/cnx-completezip/badge.png?branch=master
+   :target: https://coveralls.io/r/Connexions/cnx-completezip?branch=master
+
+.. image:: https://badge.fury.io/py/cnx-completezip.svg
+   :target: http://badge.fury.io/py/cnx-completezip
+
 This library is used for parsing, validating and creating completezip
 formatted content.
-
 
 License
 -------
