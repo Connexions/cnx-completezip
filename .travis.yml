@@ -1,0 +1,22 @@
+language: python
+python:
+  - "2.7"
+  - "3.5"
+before_install:
+  - pip install pep8
+  - pep8 --exclude=tests *.py cnxcompletezip
+  - pep8 --max-line-length=200 cnxcompletezip/tests
+
+  # Install the coverage utility and coveralls reporting utility
+  - pip install pytest pytest-cov
+  - pip install coveralls
+install:
+  - pip install .
+script:
+  # This is the same as `python setup.py test` with a coverage wrapper.
+  - py.test --cov-config .coveragerc --cov=cnxcompletezip
+after_success:
+  # Report test coverage to coveralls.io
+  - coveralls
+notifications:
+  email: false
