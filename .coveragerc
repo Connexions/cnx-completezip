@@ -1,0 +1,9 @@
+[run]
+omit =
+  cnxcompletezip/tests/*
+
+[report]
+omit =
+  cnxcompletezip/tests/*
+exclude_lines =
+  pragma: no cover
